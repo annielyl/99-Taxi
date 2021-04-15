@@ -19,7 +19,7 @@ public class Time {
         this.route = route;
     }
 
-    public double getValRun() {
+    public double getTimeRun() {
         int dist = (int) this.route.getDistance();
         double timeRun = dist * fixTime;
         return timeRun;

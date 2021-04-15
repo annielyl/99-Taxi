@@ -1,22 +1,19 @@
 package com.company;
 
-public class User {
-
+public abstract class User {
     private String name;
     private String cpf;
     private String birthdate;
-    private Adress adress;
-    private Card card;
 
-    public User(String name, String cpf, String birthdate,Adress adress,Card card) {
+    public User(String name, String cpf, String birthdate) {
 
         this.name=name;
         this.cpf=cpf;
         this.birthdate=birthdate;
-        this.adress=adress;
-        this.card=card;
 
     }
+
+    public abstract void registerUser();
 
     public String getName() {
         return name;

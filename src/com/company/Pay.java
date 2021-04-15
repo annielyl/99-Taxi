@@ -3,13 +3,23 @@ package com.company;
 public class Pay {
     private Card card;
     private Route route;
-    private double valRun=0.0;
+    private double valueRun=0.0;
     static double fixdVal=0.0001;
+    private Driver driver;
 
-    public Pay(Card card, Route route) {
+    public Pay(Card card, Route route, Driver driver) {
 
         this.card = card;
         this.route = route;
+        this.driver=driver;
+    }
+
+    public Driver getDriver() {
+        return driver;
+    }
+
+    public void setDriver(Driver driver) {
+        this.driver = driver;
     }
 
     public Card getCard() {
@@ -28,10 +38,10 @@ public class Pay {
         this.route = route;
     }
 
-    public double getValRun() {
+    public double getValueRun() {
         double dist=this.route.getDistance();
-        double valRun=dist*fixdVal;
-        return valRun;
+        double valueRun=dist*fixdVal;
+        return valueRun;
     }
 
 }

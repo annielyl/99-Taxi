@@ -1,43 +1,20 @@
 package com.company;
 
-public class Driver {
+public class Driver extends User {
 
-    private String name;
-    private String cpf;
-    private String birthdate;
     private Cnh cnh;
     private Car car;
 
     public Driver(String name, String cpf, String birthdate, Cnh cnh,Car car) {
-        this.name=name;
-        this.cpf=cpf;
-        this.birthdate=birthdate;
+        super(name,cpf,birthdate);
         this.cnh=cnh;
         this.car=car;
     }
 
-    public String getName() {
-        return name;
-    }
+    @Override
+    public void registerUser() {
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
-
-    public String getBirthdate() {
-        return birthdate;
-    }
-
-    public void setBirthdate(String birthdate) {
-        this.birthdate = birthdate;
+        System.out.println("Usuario do tipo: motorista "+getCnh().getId() );
     }
 
     public Cnh getCnh() {

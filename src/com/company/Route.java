@@ -3,7 +3,6 @@ package com.company;
 public class Route {
     private StartPoint startPoint;
     private EndPoint endPoint;
-    private int distance;
 
     public Route(StartPoint startPoint, EndPoint endPoint) {
 
