@@ -1,16 +1,16 @@
 package com.company;
 
-public class Abstract {
+public class Resume {
 
     private Pay pay;
     private Time time;
-    private Run run;
+    private Race race;
 
-    public Abstract(Pay pay,Time time, Run run) {
+    public Resume(Pay pay,Time time, Race race) {
 
         this.pay=pay;
         this.time=time;
-        this.run=run;
+        this.race=race;
     }
 
     public Pay getPay() {
@@ -29,18 +29,18 @@ public class Abstract {
         this.time = time;
     }
 
-    public Run getRun() {
-        return run;
+    public Race getRace() {
+        return race;
     }
 
-    public void setRun(Run run) {
-        this.run = run;
+    public void setRace(Race run) {
+        this.race = race;
     }
 
-    public void getAbstract(Pay pay,Time time, Run run){
+    public void getAbstract(Pay pay,Time time, Race race){
 
-        System.out.println(getRun().getPassenger().getName()+" Este é o resumo da sua corrida");
-        System.out.println("Seu motorista foi: "+getRun().getDriver().getName());
+        System.out.println(getRace().getPassenger().getName()+" Este é o resumo da sua corrida");
+        System.out.println("Seu motorista foi: "+getRace().getDriver().getName());
         System.out.println("Sua corida custou R$: "+getPay().getValueRun());
         System.out.println("O tempo da sua corrida em minutos foi de: "+getTime().getTimeRun());
     }

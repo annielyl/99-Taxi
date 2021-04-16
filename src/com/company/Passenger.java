@@ -12,7 +12,6 @@ public class Passenger extends User  {
 
     }
 
-    @Override
     public void registerUser() {
         System.out.println("Usuario do tipo: passageiro "+getAdress().getCity() );
 

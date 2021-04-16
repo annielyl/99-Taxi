@@ -11,7 +11,6 @@ public class Driver extends User {
         this.car=car;
     }
 
-    @Override
     public void registerUser() {
 
         System.out.println("Usuario do tipo: motorista "+getCnh().getId() );

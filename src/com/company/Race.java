@@ -1,11 +1,11 @@
 package com.company;
 
-public class Run {
+public class Race {
     private Route route;
     private Driver driver;
     private Passenger passenger;
 
-    public Run(Route route,Driver driver, Passenger passenger) {
+    public Race(Route route,Driver driver, Passenger passenger) {
 
         this.route = route;
         this.driver = driver;
