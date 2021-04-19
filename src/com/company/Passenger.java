@@ -12,7 +12,6 @@ public class Passenger extends User  {
         this.card=card;
     }
 
-
     public void registerUser() {
         System.out.println("Usuario do tipo: passageiro "+getAdress().getCity() );
 
@@ -31,6 +30,5 @@ public class Passenger extends User  {
     }
 
     public void setCard(Card card) {
-        this.card = card;
-    }
+        this.card = card;}
 }

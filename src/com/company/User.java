@@ -8,9 +8,9 @@ public abstract class User {
 
     public User(String name, String cpf, String birthdate) {
 
-        this.name=name;
-        this.cpf=cpf;
-        this.birthdate=birthdate;
+        this.name = name;
+        this.cpf = cpf;
+        this.birthdate = birthdate;
 
     }
 
