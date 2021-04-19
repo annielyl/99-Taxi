@@ -1,3 +1,4 @@
+
 package com.company;
 
 public class Passenger extends User  {
@@ -5,12 +6,12 @@ public class Passenger extends User  {
     private Adress adress;
     private Card card;
 
-    public Passenger(String name, String cpf, String birthdate,Adress adress, Card card) {
+    public Passenger(String name, String cpf, String birthdate,Adress adress, Card card){
         super(name,cpf,birthdate);
         this.adress=adress;
         this.card=card;
-
     }
+
 
     public void registerUser() {
         System.out.println("Usuario do tipo: passageiro "+getAdress().getCity() );

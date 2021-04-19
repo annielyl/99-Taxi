@@ -5,13 +5,13 @@ public class Card {
     private String name;
     private String number;
     private String cvv;
-    private String validity;
+    private int expirationYear;
 
-    public Card(String name, String number, String cvv, String validity) {
+    public Card(String name, String number, String cvv, int expiationYear) {
         this.name = name;
         this.number = number;
         this.cvv = cvv;
-        this.validity = validity;
+        this.expirationYear = expirationYear;
     }
 
     public String getName() {
@@ -38,11 +38,11 @@ public class Card {
         this.cvv = cvv;
     }
 
-    public String getValidity() {
-        return validity;
+    public int getExpirationYear() {
+        return expirationYear;
     }
 
-    public void setValidity(String validity) {
-        this.validity = validity;
+    public void setExpirationYear(int expirationYear) {
+        this.expirationYear = expirationYear;
     }
 }

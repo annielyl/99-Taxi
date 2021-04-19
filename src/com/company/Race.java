@@ -5,8 +5,10 @@ public class Race {
     private Driver driver;
     private Passenger passenger;
 
-    public Race(Route route,Driver driver, Passenger passenger) {
-
+    public Race(Route route,Driver driver, Passenger passenger) throws Exception {
+        if (passenger.getCard().getExpirationYear()<2021) {
+            throw new CartaoVencidoException();
+        }
         this.route = route;
         this.driver = driver;
         this.passenger = passenger;
