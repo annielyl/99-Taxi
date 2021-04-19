@@ -9,6 +9,11 @@ public class Route {
         this.startPoint=startPoint;
         this.endPoint=endPoint;
     }
+    public void ValidarRota()throws Exception{
+        if(getDistance()<=0){
+            throw new RotaInvalida();
+        }
+    }
 
     public int getDistance() {
         int distx = this.endPoint.getCoordinateX() - this.startPoint.getCoordinateX();

@@ -18,10 +18,6 @@ public class Driver extends User {
         }
     }
 
-    public void registerUser() {
-
-        System.out.println("Usuario do tipo: motorista " + getCnh().getId());
-    }
 
     public Cnh getCnh() {
         return cnh;

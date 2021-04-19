@@ -15,7 +15,7 @@ public class Card {
     }
     public void ValidarCartao()throws Exception{
         if(getExpirationYear()<2021){
-            throw new CartaoVencido();
+            throw new CartaoVencidoException();
         }
     }
 

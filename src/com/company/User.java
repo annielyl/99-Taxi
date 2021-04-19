@@ -14,8 +14,6 @@ public abstract class User {
 
     }
 
-    public abstract void registerUser();
-
     public String getName() {
         return name;
     }
